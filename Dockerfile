@@ -28,6 +28,7 @@ RUN mkdir -p maven dspace "$CATALINA_HOME" \
 
 
 COPY startup.sh /tmp/
+COPY local.cfg /tmp/
 COPY setup-tomcat.sh /tmp/
 COPY setup-dspace.sh /tmp/
 #COPY setup-postgres.sh /tmp/
